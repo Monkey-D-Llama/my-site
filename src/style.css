@@ -92,6 +92,7 @@ body {
     display: flex;
     gap: 1%;
     flex-direction: column;
+    overflow: auto;
 }
 .resume > p {
     margin-left: 3em;
