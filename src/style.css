@@ -114,7 +114,11 @@ h2 {
     display: flex;
     gap: 1%;
     flex-direction: column;
+<<<<<<< HEAD
     overflow: scroll;
+=======
+    overflow: auto;
+>>>>>>> d1f8e168804262be24642bcbc162fea75f86053f
 }
 .resume > p {
     margin-left: 1em;
