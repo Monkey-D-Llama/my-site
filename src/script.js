@@ -28,6 +28,9 @@ const dispHome = (ele) => {
 
     ele.innerHTML = '';
     ele.className = 'inner-content';
+    let h2 = document.createElement('h2');
+    h2.innerHTML = 'HOME';
+    ele.appendChild(h2);
     let a = document.createElement('p');
     a.innerHTML="<strong>Hello, My my name is Liam O'Brien</strong>";
     ele.appendChild(a);
@@ -88,11 +91,11 @@ const dispResume = (ele) => {
     let h3 = document.createElement('h3');
     h3.innerHTML = 'OVERVIEW';
     ele.appendChild(h3);
-    let a = document.createElement('a');
-    a.innerHTML = 'Quick learner with a technical aptitude toward hardware, networking, machinery and software.  '+
+    let p = document.createElement('p');
+    p.innerHTML = 'Quick learner with a technical aptitude toward hardware, networking, machinery and software.  '+
     'Skilled in problem solving and comfortable working with others and individually.  '+
     'Willing to work evenings, weekends and extended hours as needed.';
-    ele.appendChild(a);
+    ele.appendChild(p);
     ele.appendChild(document.createElement('div'));
     h3 = document.createElement('h3');
     h3.innerHTML = 'EXPERIENCE';
@@ -210,7 +213,7 @@ const dispResume = (ele) => {
 const dispContactInfo = (ele) => {
 
     ele.innerHTML = '';
-    ele.className = 'inner-content'
+    ele.className = 'contact-info';
     let h2 = document.createElement('h2');
     h2.innerHTML = 'Contact Me';
     ele.appendChild(h2);
@@ -218,3 +221,6 @@ const dispContactInfo = (ele) => {
     a.innerHTML = '<strong>Email: </strong>liam.d.obrien1998@gmail.com'
     ele.appendChild(a);
 };
+
+
+dispHome(innerCont);
