@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(15vw, 15%) 82vw;
-    grid-template-rows: minmax(87vh, 87%) 8vh;
+    grid-template-rows: minmax(90vh, 90%) 8vh;
 }
 
 .sidebar{
@@ -51,7 +51,7 @@ body {
     background-color: white;
     width: 100%;
     height: 100%;
-
+    overflow:auto;
 }
 
 .about-content {
@@ -95,7 +95,7 @@ h2 {
 
 .contact-info {
     width: 80%;
-    height: 80%;
+    height: 87vh;
     margin-top: 7%;
     margin-left: 10%;
     display: flex;
@@ -103,22 +103,19 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+    overflow: scroll;
 }
 
 .resume {
     width: 80%;
-    height: 80%;
-    margin-top: 7%;
+    height: 87vh;
     margin-left: 10%;
     display: flex;
     gap: 1%;
     flex-direction: column;
-<<<<<<< HEAD
     overflow: scroll;
-=======
-    overflow: auto;
->>>>>>> d1f8e168804262be24642bcbc162fea75f86053f
+
+    
 }
 .resume > p {
     margin-left: 1em;

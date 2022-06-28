@@ -44,23 +44,14 @@ const dispHome = (ele) => {
 const dispAbout = (ele) => {
     ele.innerHTML = '';
     ele.className = 'about-content';
+    
     let h2 = document.createElement('h2');
     h2.innerHTML ='About Me';
     ele.appendChild(h2);
     let a = document.createElement('a');
-    a.innerHTML = '<strong>Personal: </strong>';
-    ele.appendChild(a);
-    let p = document.createElement('p');
-    p.innerHTML = "Thanks for stopping by my site, I am Liam O'Brien.  " + 
-    "I am a husband, father, programmer, gamer, " +
-     "and climber with a passion pentesting." + 
-    "I am also a massive foodie and coffee connoisseur with a real love for cooking";
-    ele.appendChild(p);
-    ele.appendChild(document.createElement('div'));
-    a = document.createElement('a');
     a.innerHTML = '<strong>Professional: </strong>';
     ele.appendChild(a);
-    p = document.createElement('p');
+    let p = document.createElement('p');
     p.innerHTML = "I have been working in web development since 2017 " +
     "starting with my work with Mutual Benefit Group.  " +
     "I have worked two years as help desk service rep with Lincoln Financial " +
@@ -75,6 +66,18 @@ const dispAbout = (ele) => {
     'before switching to an IT major with a Cyber Security certification.  ' +
     'I left school when the pandemic hit and have continued to persue education on my own.  '+
     'Most recently I have began training for a CCNA and completed the Odin Project.';
+    ele.appendChild(p);
+
+
+    ele.appendChild(document.createElement('div'));
+    a = document.createElement('a');
+    a.innerHTML = '<strong>Personal: </strong>';
+    ele.appendChild(a);
+    p = document.createElement('p');
+    p.innerHTML = "Thanks for stopping by my site, I am Liam O'Brien.  " + 
+    "I am a husband, father, programmer, gamer, " +
+     "and climber with a passion pentesting." + 
+    "I am also a massive foodie and coffee connoisseur with a real love for cooking";
     ele.appendChild(p);
 
 
