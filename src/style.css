@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(15vw, 15%) 82vw;
-    grid-template-rows: minmax(90vh, 90%) 8vh;
+    grid-template-rows: minmax(90vh, 90%) 5vh;
 }
 
 .sidebar{
@@ -56,13 +56,13 @@ body {
 
 .about-content {
     width: 80%;
-    height: 80%;
-    margin-top: 5%;
+    height: 82vh;
+    margin-top: 7vh;
     margin-left: 10%;
     gap: 5%;
     display: flex;
     flex-direction: column;
-    padding-top: 3%;
+   
     overflow: scroll;
 }
 
@@ -95,8 +95,8 @@ h2 {
 
 .contact-info {
     width: 80%;
-    height: 87vh;
-    margin-top: 7%;
+    height: 82vh;
+    margin-top: vh;
     margin-left: 10%;
     display: flex;
     gap: 5%;
@@ -108,7 +108,8 @@ h2 {
 
 .resume {
     width: 80%;
-    height: 87vh;
+    height: 82vh;
+    margin-top: 7vh;
     margin-left: 10%;
     display: flex;
     gap: 1%;
