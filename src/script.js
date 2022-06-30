@@ -1,8 +1,31 @@
+import main from './snake/game.js';
+
+
+
 const innerCont = document.querySelector('.inner-content');
 const homebtn = document.querySelector('#homebtn');
 const aboutbtn = document.querySelector('#aboutbtn');
 const resumebtn = document.querySelector('#resumebtn');
 const contactInfoBtn = document.querySelector('#contactinfobtn');
+const appsbtn = document.querySelector('#appsbtn');
+
+let apps = [
+            {
+                name: 'snake',
+                type: 'game',
+                img: '',
+                click: (ele) => {
+                    
+                    ele.innerHTML = ''
+                    let div = document.createElement('div');
+                    ele.className = 'snake-container';
+                    div.id = 'game-board';
+                    ele.appendChild(div);
+                    window.requestAnimationFrame(main);
+                    }
+            },
+            ];
+
 
 
 
@@ -21,6 +44,10 @@ homebtn.addEventListener('click', () => {
 
 aboutbtn.addEventListener('click', () => {
     dispAbout(innerCont);
+});
+
+appsbtn.addEventListener('click', () => {
+    dispApps(innerCont);
 });
 
 
@@ -104,7 +131,7 @@ const dispResume = (ele) => {
     h3.innerHTML = 'EXPERIENCE';
     ele.appendChild(h3);
     div = document.createElement('div');
-    a = document.createElement('a');
+    let a = document.createElement('a');
     a.innerHTML = '<strong>Lincoln Financial, Radnor, PA </strong>'+
     '- Support Desk Technician';
     div.appendChild(a);
@@ -224,6 +251,27 @@ const dispContactInfo = (ele) => {
     a.innerHTML = '<strong>Email: </strong>liam.d.obrien1998@gmail.com'
     ele.appendChild(a);
 };
+
+const dispApps = (ele) => {
+    ele.innerHTML = '';
+    ele.className = 'apps';
+    let div = document.createElement('div');
+    div.addEventListener('click', () => {
+        apps[0].click(ele)
+    });
+    let a = document.createElement('a');
+    a.innerHTML = apps[0].name;
+    div.appendChild(a);
+    ele.appendChild(div);
+}
+
+    
+
+
+
+
+
+
 
 
 dispHome(innerCont);
