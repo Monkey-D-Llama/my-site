@@ -13,7 +13,7 @@ let apps = [
             {
                 name: 'snake',
                 type: 'game',
-                img: './src/snake.jpeg',
+                img: './src/img/snake.jpeg',
                 click: (ele) => {
                     
                     ele.innerHTML = ''
@@ -25,11 +25,11 @@ let apps = [
                     }
             },
             {
-                name: 'Weather Tracker',
+                name: 'Todo List',
                 type: 'app',
-                img: '',
+                img: './src/img/todo.jpeg',
                 click: (ele) => {
-                    ele.innerHTML = ''
+                    comingSoon(ele);
                     
                 },
 
@@ -269,7 +269,7 @@ const dispApps = (ele) => {
     apps.forEach(app => {
         let div = document.createElement('div');
         div.addEventListener('click', () => {
-            apps[0].click(ele)
+            app.click(ele)
         });
         let a = document.createElement('a');
         a.innerHTML = '<strong>' +app.type.toUpperCase() + '</strong>';
@@ -293,7 +293,13 @@ const dispApps = (ele) => {
 
 
 
-
+const comingSoon = (ele) => {
+    ele.innerHTML = '';
+    ele.className = 'soon';
+    let h1 = document.createElement('h1');
+    h1.innerHTML = 'COMING SOON.....';
+    ele.appendChild(h1);
+}
 
 
 

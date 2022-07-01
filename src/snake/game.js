@@ -12,10 +12,10 @@ export default function main(currentTime) {
     
     
     if(gameOver){
-        if (confirm('You lost.')){
-            window.location = '/index';
+        if (confirm('You lost!')){
+            window.location.reload();
         }
-        window.location = '/';
+        window.location.reload();
         return;
     }
 
