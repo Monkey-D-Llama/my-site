@@ -137,7 +137,7 @@ h2 {
     overflow: scroll;
     grid-template-columns: repeat(2, 30vmin);
     grid-template-rows: repeat(4, 35vmin);
-    gap: 4vh;
+    gap:20vmin;
 
 }
 .apps > div {
@@ -148,6 +148,7 @@ h2 {
     align-items: center;
     border: solid black 1px;
     border-radius: 4%;
+    gap: 10%;
     padding: 10px;
 }
 
