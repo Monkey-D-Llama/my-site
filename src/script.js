@@ -24,6 +24,12 @@ let apps = [
                     window.requestAnimationFrame(main);
                     }
             },
+            {
+                name: 'Weather Tracker',
+                type: 'app',
+                img: '',
+
+            }
             ];
 
 
@@ -255,14 +261,22 @@ const dispContactInfo = (ele) => {
 const dispApps = (ele) => {
     ele.innerHTML = '';
     ele.className = 'apps';
-    let div = document.createElement('div');
-    div.addEventListener('click', () => {
-        apps[0].click(ele)
+    apps.forEach(app => {
+        let div = document.createElement('div');
+        div.addEventListener('click', () => {
+            apps[0].click(ele)
+        });
+        let a = document.createElement('a');
+        a.innerHTML = '<strong>' +app.type.toUpperCase() + '</strong>';
+        div.appendChild(a);
+        a = document.createElement('a');
+        a.innerHTML = app.name;
+        div.appendChild(a);
+        ele.appendChild(div);
     });
-    let a = document.createElement('a');
-    a.innerHTML = apps[0].name;
-    div.appendChild(a);
-    ele.appendChild(div);
+    
+
+    
 }
 
     
