@@ -13,7 +13,7 @@ let apps = [
             {
                 name: 'snake',
                 type: 'game',
-                img: '',
+                img: './src/snake.jpeg',
                 click: (ele) => {
                     
                     ele.innerHTML = ''
@@ -28,6 +28,11 @@ let apps = [
                 name: 'Weather Tracker',
                 type: 'app',
                 img: '',
+                click: (ele) => {
+                    ele.innerHTML = ''
+                    
+                },
+
 
             }
             ];
@@ -272,6 +277,10 @@ const dispApps = (ele) => {
         a = document.createElement('a');
         a.innerHTML = app.name;
         div.appendChild(a);
+        let img = document.createElement('img');
+        img.src = app.img;
+        img.className = 'app-img';
+        div.appendChild(img)
         ele.appendChild(div);
     });
     
