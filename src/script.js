@@ -114,7 +114,7 @@ const dispAbout = (ele) => {
     p = document.createElement('p');
     p.innerHTML = "Thanks for stopping by my site, I am Liam O'Brien.  " + 
     "I am a husband, father, programmer, gamer, " +
-     "and climber with a passion pentesting." + 
+     "and climber with a passion pentesting.  " + 
     "I am also a massive foodie and coffee connoisseur with a real love for cooking";
     ele.appendChild(p);
 
